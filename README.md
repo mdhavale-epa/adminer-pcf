@@ -5,7 +5,7 @@ A copy of adminer for an easy push to PCF.
 Adminer is a PHP web front end for mysql databases.  You can push this directory to PCF to perform a database import from within PCF itself.
 
 Here’s the process for using adminer:
-1)	Replace adminer.sql with your msql dump.  Note:  LOCK TABLE and UNLOCK TABLE commands won’t work, so you’ll need to strip those out of your dump.  You can remove those like so:
+1)	Replace adminer.sql with your mysql dump.  Note:  LOCK TABLE and UNLOCK TABLE commands won’t work, so you’ll need to strip those out of your dump.  You can remove those like so:
 
 ```
 sed -i 's/^LOCK\ TABLES/\-\-\ LOCK\ TABLES/g' adminer.sql
